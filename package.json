@@ -44,5 +44,8 @@
   ],
   "engines": {
     "node": "8.11"
+  },
+  "dependencies": {
+    "postcss-sorting": "^3.1.0"
   }
 }

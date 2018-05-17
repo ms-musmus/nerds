@@ -45,8 +45,8 @@ gulp.task("serve", function () {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-             .pipe(webp({quality: 90}))
-             .pipe(gulp.dest("source/img"));
+              .pipe(webp({quality: 90}))
+              .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("images", function () {
