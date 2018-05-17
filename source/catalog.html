@@ -32,5 +32,172 @@
         </ul>
       </nav>
     </header>
+    <main class="page-main">
+      <h1 class="page-main__header">Магазин готовых шаблонов</h1>
+      <div class="search">
+        <section class="filter search__filter">
+          <h2 class="visually-hidden">Фильтр</h2>
+          <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="filter__range range">
+              <b class="range__title">Стоимость:</b>
+              <div class="range__controls">
+                <span class="range__bar"></span>
+                <span class="range__control range__control--left"></span>
+                <span class="range__control range__control--right"></span>
+              </div>
+              <label class="range__label">От
+                <input class="range__input range__input--from" id="range-from" type="text" name="min-price" value="0">
+              </label>
+              <label class="range__label">До
+                <input class="range__input range__input--to" type="text" name="max-price" value="15000">
+              </label>
+            </div>
+            <div class="filter__grid grid">
+              <b class="grid__title">Сетка:</b>
+              <label class="grid__label">
+                <input class="visually-hidden" type="radio" name="grid" checked><span class="grid__indicator"></span>Адаптивная
+              </label>
+              <label class="grid__label">
+                <input class="visually-hidden" type="radio" name="grid"><span class="grid__indicator"></span>Фиксированная
+              </label>
+              <label class="grid__label">
+                <input class="visually-hidden" type="radio" name="grid"><span class="grid__indicator"></span>Резиновая
+              </label>
+            </div>
+            <div class="filter__features features">
+              <b class="features__title">Особенности:</b>
+              <label class="features__label">
+                <input class="visually-hidden" type="checkbox" name="slider" checked><span class="features__indicator"></span>Слайдер
+              </label>
+              <label class="features__label">
+                <input class="visually-hidden" type="checkbox" name="advantages"><span class="features__indicator"></span>Блок преимуществ
+              </label>
+              <label class="features__label">
+                <input class="visually-hidden" type="checkbox" name="news" checked><span class="features__indicator"></span>Новости
+              </label>
+              <label class="features__label">
+                <input class="visually-hidden" type="checkbox" name="gallery"><span class="features__indicator"></span>Галерея
+              </label>
+              <label class="features__label">
+                <input class="visually-hidden" type="checkbox" name="cart"><span class="features__indicator"></span>Корзина
+              </label>
+            </div>
+            <button class="button filter__button button--grey" type="submit">Показать</button>
+          </form>
+        </section>
+        <div class="search__wrapper">
+          <section class="sort search__sort">
+            <h2 class="visually-hidden">Сортировка результатов</h2>
+            <span class="sort__title">Сортировать:</span>
+            <ul class="sort__type">
+              <li class="sort__type-item">
+                <a class="sort__type-link sort__type-link--active">по цене</a>
+              </li>
+              <li class="sort__type-item">
+                <a class="sort__type-link" href="#">по типу</a>
+              </li>
+              <li class="sort__type-item">
+                <a class="sort__type-link" href="#">по названию</a>
+              </li>
+            </ul>
+            <ul class="sort__direction">
+              <li class="sort__direction-item">
+                <a class="sort__direction-link sort__direction-link--active"><span class="visually-hidden">по убыванию</span></a>
+              </li>
+              <li class="sort__direction-item">
+                <a class="sort__direction-link" href="#"><span class="visually-hidden">по возрастанию</span></a>
+              </li>
+            </ul>
+          </section>
+          <section class="result search__result">
+            <h2 class="visually-hidden">Результаты поиска</h2>
+            <section class="result__item">
+              <img class="result__image" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+              <div class="result__info">
+                <h3 class="result__item-title"><a href="#">Sedona</a></h3>
+                <p class="result__item-description">Информационный сайт для туристов</p>
+                <a class="button result__item-button">9 900 руб.</a>
+              </div>
+            </section>
+            <section class="result__item">
+              <img class="result__image" src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
+              <div class="result__info">
+                <h3 class="result__item-title"><a href="#">Pink App</a></h3>
+                <p class="result__item-description">Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="button result__item-button">9 900 руб.</a>
+              </div>
+            </section>
+            <section class="result__item">
+              <img class="result__image" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+              <div class="result__info">
+                <h3 class="result__item-title"><a href="#">Barbershop</a></h3>
+                <p class="result__item-description">Сайт салоны красоты. Для мужчин, да.</p>
+                <a class="button result__item-button">9 900 руб.</a>
+              </div>
+            </section>
+            <section class="result__item">
+              <img class="result__image" src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+              <div class="result__info">
+                <h3 class="result__item-title"><a href="#">Mishka</a></h3>
+                <p class="result__item-description">Интернет-магазин вязаных игрушек</p>
+                <a class="button result__item-button">9 900 руб.</a>
+              </div>
+            </section>
+            <section class="result__item">
+              <img class="result__image" src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
+              <div class="result__info">
+                <h3 class="result__item-title"><a href="#">A Plus</a></h3>
+                <p class="result__item-description">Лендинг курсов повышения квалификации</p>
+                <a class="button result__item-button">9 900 руб.</a>
+              </div>
+            </section>
+            <section class="result__item">
+              <img class="result__image" src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+              <div class="result__info">
+                <h3 class="result__item-title"><a href="#">Кваст</a></h3>
+                <p class="result__item-description">Промо-сайт производителя крафтового кваса</p>
+                <a class="button result__item-button">9 900 руб.</a>
+              </div>
+            </section>
+            <div class="result__nav">
+              <a class="result__page result__page--active">1</a>
+              <a class="result__page" href="#">2</a>
+              <a class="result__page" href="#">3</a>
+              <a class="result__page result__page--next" href="#">Следующая</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+        <section class="map">
+          <h2 class="visually-hidden">Карта</h2>
+          <section class="contacts map__contacts">
+            <h2 class="contacts__header">Nёrds design studio</h2>
+            <p class="contacts__address">
+              191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
+            </p>
+            <span class="contacts__phone">тел. +7 (812) 275-75-75</span>
+            <a class="button contacts__button">Напишите нам</a>
+          </section>
+        </section>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__item-link social__item-link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link social__item-link--insta" href="#"><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+          </ul>
+          <div class="social__wrapper">
+            <b class="social__slogan">Давайте дружить, это выгодно!</b>
+            <span class="social__offer">Скидка 10% для друзей из социальных сетей.</span>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>
