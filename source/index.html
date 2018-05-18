@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-        <a class="page-header__logo-link"><img class="page-header__logo-image" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds"></a>
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
+        </a>
         <nav class="main-nav">
           <ul class="main-nav__site">
             <li class="main-nav__site-item">
@@ -28,7 +33,7 @@
           </ul>
           <ul class="main-nav__user">
             <li class="main-nav__user-item">
-              <a class="main-nav__site-link" href="#">Корзина</a>
+              <a class="main-nav__user-link" href="#">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -189,13 +194,22 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__item-link social__item-link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
+              <a class="social__item-link social__item-link--vk" href="#">
+                <svg class="social__link-image" width="26" height="15"><use xlink:href="#vk-icon"></use></svg>
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+              <a class="social__item-link social__item-link--fb" href="#">
+                <svg class="social__link-image" width="12" height="22"><use xlink:href="#fb-icon"></use></svg>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__item-link social__item-link--insta" href="#"><span class="visually-hidden">Инстаграм</span></a>
+              <a class="social__item-link social__item-link--insta" href="#">
+                <svg class="social__link-image" width="21" height="21"><use xlink:href="#insta-icon"></use></svg>
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
           </ul>
           <div class="social__wrapper">

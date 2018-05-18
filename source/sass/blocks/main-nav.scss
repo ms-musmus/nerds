@@ -1,9 +1,11 @@
 .main-nav__site {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__site-item {
-  &--active {
+  &--active .main-nav__site-link {
     border-bottom: 2px solid #fb565a;
   }
 }
@@ -20,16 +22,34 @@
   }
 
   &[href]:active {
-    opacity: 0.3;
+    color: rgba(251, 86, 90, 0.3);
   }
 }
 
 .main-nav__user {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__user-item {
-  &--active {
+  &--active .main-nav__user-link {
     border-bottom: 2px solid #fb565a;
+  }
+}
+
+.main-nav__user-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 26px;
+    background-image: url("/img/cart-icon.svg");
+    background-repeat: no-repeat;
   }
 }

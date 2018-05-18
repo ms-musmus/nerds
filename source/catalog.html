@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-        <a class="page-header__logo-link" href="index.html"><img class="page-header__logo-image" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds"></a>
+        <a class="page-header__logo-link" href="index.html">
+          <img class="page-header__logo-image" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
+        </a>
         <nav class="main-nav">
           <ul class="main-nav__site">
             <li class="main-nav__site-item">
@@ -28,7 +33,7 @@
           </ul>
           <ul class="main-nav__user">
             <li class="main-nav__user-item">
-              <a class="main-nav__site-link" href="#">Корзина</a>
+              <a class="main-nav__user-link" href="#">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -43,9 +48,11 @@
             <div class="filter__range range">
               <b class="range__title">Стоимость:</b>
               <div class="range__controls">
-                <span class="range__bar"></span>
-                <span class="range__control range__control--left"></span>
-                <span class="range__control range__control--right"></span>
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__control range__control--left" tabindex="0"></div>
+                <div class="range__control range__control--right" tabindex="0"></div>
               </div>
               <label class="range__label">От
                 <input class="range__input range__input--from" id="range-from" type="text" name="min-price" value="0">
@@ -57,31 +64,31 @@
             <div class="filter__grid grid">
               <b class="grid__title">Сетка:</b>
               <label class="grid__label">
-                <input class="visually-hidden" type="radio" name="grid" checked><span class="grid__indicator"></span>Адаптивная
+                <input class="visually-hidden grid__radio" type="radio" name="grid" value="adaptive" checked><span class="grid__indicator"></span><span class="grid__label-text">Адаптивная</span>
               </label>
               <label class="grid__label">
-                <input class="visually-hidden" type="radio" name="grid"><span class="grid__indicator"></span>Фиксированная
+                <input class="visually-hidden grid__radio" type="radio" name="grid" value="fix"><span class="grid__indicator"></span><span class="grid__label-text">Фиксированная</span>
               </label>
               <label class="grid__label">
-                <input class="visually-hidden" type="radio" name="grid"><span class="grid__indicator"></span>Резиновая
+                <input class="visually-hidden grid__radio" type="radio" name="grid" value="liquid"><span class="grid__indicator"></span><span class="grid__label-text">Резиновая</span>
               </label>
             </div>
             <div class="filter__features features">
               <b class="features__title">Особенности:</b>
               <label class="features__label">
-                <input class="visually-hidden" type="checkbox" name="slider" checked><span class="features__indicator"></span>Слайдер
+                <input class="visually-hidden features__checkbox" type="checkbox" name="slider" checked><span class="features__indicator"></span><span class="features__label-text">Слайдер</span>
               </label>
               <label class="features__label">
-                <input class="visually-hidden" type="checkbox" name="advantages"><span class="features__indicator"></span>Блок преимуществ
+                <input class="visually-hidden features__checkbox" type="checkbox" name="advantages"><span class="features__indicator"></span><span class="features__label-text">Блок преимуществ</span>
               </label>
               <label class="features__label">
-                <input class="visually-hidden" type="checkbox" name="news" checked><span class="features__indicator"></span>Новости
+                <input class="visually-hidden features__checkbox" type="checkbox" name="news" checked><span class="features__indicator"></span><span class="features__label-text">Новости</span>
               </label>
               <label class="features__label">
-                <input class="visually-hidden" type="checkbox" name="gallery"><span class="features__indicator"></span>Галерея
+                <input class="visually-hidden features__checkbox" type="checkbox" name="gallery"><span class="features__indicator"></span><span class="features__label-text">Галерея</span>
               </label>
               <label class="features__label">
-                <input class="visually-hidden" type="checkbox" name="cart"><span class="features__indicator"></span>Корзина
+                <input class="visually-hidden features__checkbox" type="checkbox" name="cart"><span class="features__indicator"></span><span class="features__label-text">Корзина</span>
               </label>
             </div>
             <button class="button filter__button button--grey" type="submit">Показать</button>
@@ -104,10 +111,15 @@
             </ul>
             <ul class="sort__direction">
               <li class="sort__direction-item">
-                <a class="sort__direction-link sort__direction-link--active"><span class="visually-hidden">по убыванию</span></a>
+                <a class="sort__direction-link sort__direction-link--active">
+                  <svg class="sort__direction-image" width="11" height="10"><use xlink:href="#icon-down"></use></svg>
+                  <span class="visually-hidden">по убыванию</span></a>
               </li>
               <li class="sort__direction-item">
-                <a class="sort__direction-link" href="#"><span class="visually-hidden">по возрастанию</span></a>
+                <a class="sort__direction-link" href="#">
+                  <svg class="sort__direction-image" width="11" height="10"><use xlink:href="#icon-up"></use></svg>
+                  <span class="visually-hidden">по возрастанию</span>
+                </a>
               </li>
             </ul>
           </section>
@@ -201,13 +213,22 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__item-link social__item-link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
+            <a class="social__item-link social__item-link--vk" href="#">
+              <svg class="social__link-image" width="26" height="15"><use xlink:href="#vk-icon"></use></svg>
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__item-link social__item-link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            <a class="social__item-link social__item-link--fb" href="#">
+              <svg class="social__link-image" width="12" height="22"><use xlink:href="#fb-icon"></use></svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__item-link social__item-link--insta" href="#"><span class="visually-hidden">Инстаграм</span></a>
+            <a class="social__item-link social__item-link--insta" href="#">
+              <svg class="social__link-image" width="21" height="21"><use xlink:href="#insta-icon"></use></svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
           </li>
         </ul>
         <div class="social__wrapper">

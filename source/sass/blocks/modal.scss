@@ -18,6 +18,23 @@
   color: $text-color-dark;
 }
 
+.modal__close {
+  width: 21px;
+  height: 21px;
+  background-color: $background-color-white;
+  background-image: url("/img/close-cross.svg");
+  border: none;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
 .modal__label {
   font-weight: 700;
   line-height: 18px;

@@ -1,0 +1,73 @@
+.range {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.range__title {
+  margin-bottom: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-color-dark;
+  text-transform: uppercase;
+}
+
+.range__controls {
+  position: relative;
+  width: 260px;
+  height: 80px;
+  margin: 0;
+  margin-bottom: 14px;
+  padding-top: 39px;
+  padding-right: 21px;
+  padding-left: 20px;
+  background-color: $background-color-light;
+}
+
+.range__scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range__bar {
+  width: 152px;
+  height: 100%;
+  background-color: #00ca74;
+}
+
+.range__control {
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  background-image: url("/img/filter-button.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &--left {
+    top: 29px;
+    left: 18px;
+  }
+
+  &--right {
+    top: 29px;
+    right: 80px;
+  }
+}
+
+.range__label {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.range__input {
+  width: 80px;
+  margin-left: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 22px;
+  text-align: center;
+  background-color: $background-color-light;
+  border: 3px solid $background-color-light;
+}
