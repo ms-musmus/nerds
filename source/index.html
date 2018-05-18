@@ -37,137 +37,154 @@
     <main class="page-main">
       <section class="slider">
         <div class="slider__wrapper">
-          <div class="slider__text slider__text--first">
-            <h2 class="slider__header">Долго, дорого, скрупулезно</h2>
-            <p class="slider__description">
-              Математически выверенный дизайн для вашего сайта или мобильного приложения.
-            </p>
-            <a class="button slider__button">Узнать больше</a>
-          </div>
-          <div class="slider__text slider__text--second">
-            <h2 class="slider__header">Любим математику как никто другой</h2>
-            <p class="slider__description">
-              Никакого креатива, только математические формулы для расчета идеальных пропорций.
-            </p>
-            <a class="button slider__button">Узнать больше</a>
-          </div>
-          <div class="slider__text slider__text--third">
-            <h2 class="slider__header">Только ночь, только хардкор</h2>
-            <p class="slider__description">
-              Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-            </p>
-            <a class="button slider__button">Узнать больше</a>
-          </div>
+          <input class="slider__toggle visually-hidden" id="slider-1" type="radio" name="slider" checked>
+          <input class="slider__toggle visually-hidden" id="slider-2" type="radio" name="slider">
+          <input class="slider__toggle visually-hidden" id="slider-3" type="radio" name="slider">
           <div class="slider__controls">
-            <span class="slider__toggle"></span>
-            <span class="slider__toggle"></span>
-            <span class="slider__toggle"></span>
+            <label class="slider__indicator" for="slider-1"></label>
+            <label class="slider__indicator" for="slider-2"></label>
+            <label class="slider__indicator" for="slider-3"></label>
+          </div>
+          <div class="slider__slide slider__slide--first">
+            <div class="slider__text">
+              <h2 class="slider__header">Долго, дорого, скрупулезно</h2>
+              <p class="slider__description">
+                Математически выверенный дизайн для вашего сайта или мобильного приложения.
+              </p>
+              <a class="button slider__button" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slider__slide slider__slide--second">
+            <div class="slider__text">
+              <h2 class="slider__header">Любим математику как никто другой</h2>
+              <p class="slider__description">
+                Никакого креатива, только математические формулы для расчета идеальных пропорций.
+              </p>
+              <a class="button slider__button" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slider__slide slider__slide--third">
+            <div class="slider__text">
+              <h2 class="slider__header">Только ночь, только хардкор</h2>
+              <p class="slider__description">
+                Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+              </p>
+              <a class="button slider__button" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Наши возможности</h2>
-        <section class="advantages__item">
-          <img class="advantages__item-image" src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-          <h3 class="advantages__item-header">Веб-сайты</h3>
-          <p class="advantages__item-description">
-            Мир никогда не будет прежним после того как увидит ваш сайт!
-          </p>
-          <a class="button advantages__item-button" href="#">Заказать</a>
-        </section>
-        <section class="advantages__item">
-          <img class="advantages__item-image" src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-          <h3 class="advantages__item-header">Приложения</h3>
-          <p class="advantages__item-description">
-            Покорите топ-10 приложений в AppStore и Google Play
-          </p>
-          <a class="button advantages__item-button button--green" href="#">Заказать</a>
-        </section>
-        <section class="advantages__item">
-          <img class="advantages__item-image" src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
-          <h3 class="advantages__item-header">Презентации</h3>
-          <p class="advantages__item-description">
-            Вы даже не подозреваете, насколько вы изумительны!
-          </p>
-          <a class="button advantages__item-button button--yellow" href="#">Заказать</a>
-        </section>
+        <div class="advantages__wrapper">
+          <h2 class="visually-hidden">Наши возможности</h2>
+          <section class="advantages__item">
+            <img class="advantages__item-image" src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+            <h3 class="advantages__item-header">Веб-сайты</h3>
+            <p class="advantages__item-description">
+              Мир никогда не будет прежним после того как увидит ваш сайт!
+            </p>
+            <a class="button advantages__item-button" href="#">Заказать</a>
+          </section>
+          <section class="advantages__item">
+            <img class="advantages__item-image" src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+            <h3 class="advantages__item-header">Приложения</h3>
+            <p class="advantages__item-description">
+              Покорите топ-10 приложений в AppStore и Google Play
+            </p>
+            <a class="button advantages__item-button button--green" href="#">Заказать</a>
+          </section>
+          <section class="advantages__item">
+            <img class="advantages__item-image" src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+            <h3 class="advantages__item-header">Презентации</h3>
+            <p class="advantages__item-description">
+              Вы даже не подозреваете, насколько вы изумительны!
+            </p>
+            <a class="button advantages__item-button button--yellow" href="#">Заказать</a>
+          </section>
+        </div>
       </section>
       <section class="information">
-        <h2 class="visually-hidden">Информация</h2>
-        <div class="information__left-wrapper">
-          <b class="information__title">Мы — маленькая, но гордая дизайн-студия из Краснодара</b>
-          <p class="information__description">
-            Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
-          </p>
-          <b class="information__list-title">Выполняем заказы на разработку:</b>
-          <ul class="information__list">
-            <li class="information__list-item">
-              Веб-сайтов любой сложности
-            </li>
-            <li class="information__list-item">
-              Мобильных приложений для iOS и Android
-            </li>
-            <li class="information__list-item">
-              Слайдшоу и видео для корпоративных презентаций
-            </li>
-          </ul>
-        </div>
-        <div class="information__right-wrapper">
-          <img class="information__logo" src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип Nerds">
-          <b class="information__table-title">С 2004 года любим точность во всем:</b>
-          <table class="information__table">
-            <tr>
-              <td class="information__table-value">
-                146<sup>%</sup>
-              </td>
-              <td class="information__table-value">
-                100<sup>%</sup>
-              </td>
-              <td class="information__table-value">
-                50<sup>%</sup>
-              </td>
-            </tr>
-            <tr>
-              <td class="information__table-description">
-                Уровень самоотдачи
-              </td>
-              <td class="information__table-description">
-                Соблюдение сроков
-              </td>
-              <td class="information__table-description">
-                Минимальная предоплата
-              </td>
-            </tr>
-          </table>
+        <div class="information__wrapper">
+          <h2 class="visually-hidden">Информация</h2>
+          <div class="information__left-wrapper">
+            <b class="information__title">Мы — маленькая, но гордая дизайн-студия из Краснодара</b>
+            <p class="information__description">
+              Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+            </p>
+            <b class="information__list-title">Выполняем заказы на разработку:</b>
+            <ul class="information__list">
+              <li class="information__list-item">
+                Веб-сайтов любой сложности
+              </li>
+              <li class="information__list-item">
+                Мобильных приложений для iOS и Android
+              </li>
+              <li class="information__list-item">
+                Слайдшоу и видео для корпоративных презентаций
+              </li>
+            </ul>
+          </div>
+          <div class="information__right-wrapper">
+            <img class="information__logo" src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип Nerds">
+            <b class="information__table-title">С 2004 года любим точность во всем:</b>
+            <table class="information__table">
+              <tr>
+                <td class="information__table-value">
+                  146<sup>%</sup>
+                </td>
+                <td class="information__table-value">
+                  100<sup>%</sup>
+                </td>
+                <td class="information__table-value">
+                  50<sup>%</sup>
+                </td>
+              </tr>
+              <tr>
+                <td class="information__table-description">
+                  Уровень самоотдачи
+                </td>
+                <td class="information__table-description">
+                  Соблюдение сроков
+                </td>
+                <td class="information__table-description">
+                  Минимальная предоплата
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </section>
       <section class="partners">
-        <h2 class="visually-hidden">Наши партнеры</h2>
-        <a class="partners__logo-link" href="https://htmlacademy.ru/">
-          <img class="partners__logo" src="img/logo-1.png" width="199" height="68" alt="Html Academy">
-        </a>
-        <a class="partners__logo-link" href="#">
-          <img class="partners__logo" src="img/logo-2.png" width="209" height="87" alt="Barbershop Borodinski">
-        </a>
-        <a class="partners__logo-link" href="#">
-          <img class="partners__logo" src="img/logo-3.png" width="185" height="52" alt="Pink">
-        </a>
-        <a class="partners__logo-link" href="#">
-          <img class="partners__logo" src="img/logo-4.png" width="173" height="84" alt="Mishka">
-        </a>
+        <div class="partners__wrapper">
+          <h2 class="visually-hidden">Наши партнеры</h2>
+          <a class="partners__logo-link" href="https://htmlacademy.ru/">
+            <img class="partners__logo" src="img/logo-1.png" width="199" height="68" alt="Html Academy">
+          </a>
+          <a class="partners__logo-link" href="#">
+            <img class="partners__logo" src="img/logo-2.png" width="209" height="87" alt="Barbershop Borodinski">
+          </a>
+          <a class="partners__logo-link" href="#">
+            <img class="partners__logo" src="img/logo-3.png" width="185" height="52" alt="Pink">
+          </a>
+          <a class="partners__logo-link" href="#">
+            <img class="partners__logo" src="img/logo-4.png" width="173" height="84" alt="Mishka">
+          </a>
+        </div>
       </section>
       <footer class="page-footer">
         <section class="map">
-          <h2 class="visually-hidden">Карта</h2>
-          <section class="contacts map__contacts">
-            <h2 class="contacts__header">Nёrds design studio</h2>
-            <p class="contacts__address">
-              191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
-            </p>
-            <span class="contacts__phone">тел. +7 (812) 275-75-75</span>
-            <a class="button contacts__button">Напишите нам</a>
-          </section>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461616122!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1526592381524" width="1440" height="416" allowfullscreen></iframe>
+          <div class="map__wrapper">
+            <h2 class="visually-hidden">Карта</h2>
+            <section class="contacts map__contacts">
+              <h2 class="contacts__header">Nёrds design studio</h2>
+              <p class="contacts__address">
+                191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
+              </p>
+              <span class="contacts__phone">тел. +7 (812) 275-75-75</span>
+              <a class="button contacts__button" href="#">Напишите нам</a>
+            </section>
+          </div>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.299557663316!2d30.324177341271223!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1526659256999" width="1440" height="416" allowfullscreen></iframe>
         </section>
         <div class="social">
           <ul class="social__list">
@@ -195,17 +212,17 @@
             <p class="modal__wrapper">
               <label class="modal__label">
                 Ваше имя:
-                <input class="modal__input" type="text" placeholder="Представьтесь, пожалуйста">
+                <input class="modal__input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
               </label>
               <label class="modal__label">
                 Ваш e-mail:
-                <input class="modal__input" type="text" placeholder="Для отправки ответа">
+                <input class="modal__input" type="email" name="e-mail" placeholder="Для отправки ответа">
               </label>
             </p>
             <p class="modal__wrapper">
               <label class="modal__label">
                 Текст письма:
-                <textarea class="modal__text" placeholder="В свободной форме"></textarea>
+                <textarea class="modal__text" name="message" placeholder="В свободной форме"></textarea>
               </label>
             </p>
             <p class="modal__wrapper">

@@ -15,11 +15,11 @@
   color: $text-color-dark;
   text-transform: uppercase;
 
-  &:hover {
+  &[href]:hover {
     color: #fb565a;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 }

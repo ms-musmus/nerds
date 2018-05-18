@@ -1,0 +1,18 @@
+.advantages {
+  width: $width;
+  margin: 0 auto;
+}
+
+.advantages__wrapper {
+  margin-right: 20px;
+  margin-left: 20px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.advantages__item-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $text-color-dark;
+  text-transform: uppercase;
+}
