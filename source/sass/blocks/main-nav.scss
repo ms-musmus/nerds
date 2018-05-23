@@ -1,10 +1,25 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 798px;
+  padding-top: 25px;
+}
+
 .main-nav__site {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .main-nav__site-item {
+  margin-right: 46px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
   &--active .main-nav__site-link {
     border-bottom: 2px solid #fb565a;
   }
@@ -12,6 +27,7 @@
 
 .main-nav__site-link,
 .main-nav__user-link {
+  padding-bottom: 9px;
   font-weight: 500;
   line-height: 30px;
   color: $text-color-dark;
@@ -27,6 +43,10 @@
 }
 
 .main-nav__user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 160px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -48,7 +68,7 @@
     display: block;
     width: 15px;
     height: 15px;
-    margin-right: 26px;
+    margin-right: 25px;
     background-image: url("/img/cart-icon.svg");
     background-repeat: no-repeat;
   }
