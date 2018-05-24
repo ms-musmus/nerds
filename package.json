@@ -46,6 +46,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "gulp-uglify": "^3.0.0",
     "postcss-sorting": "^3.1.0"
   }
 }

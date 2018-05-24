@@ -29,6 +29,10 @@
     background-color: #e74246;
   }
 
+  &:focus {
+    outline: 1px dotted #000000;
+  }
+
   &--green:hover {
     background-color: #00bc6b;
   }

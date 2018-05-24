@@ -236,14 +236,14 @@
           <span class="social__offer">Скидка 10% для друзей из социальных сетей.</span>
         </div>
       </div>
-      <section class="modal">
+      <section class="modal modal--hidden">
         <h2 class="modal__header">Напишите нам</h2>
         <button class="modal__close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-          <p class="modal__wrapper">
-            <label class="modal__label">
+          <p class="modal__wrapper modal__wrapper--first">
+            <label class="modal__label modal__label--left">
               Ваше имя:
               <input class="modal__input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
             </label>
@@ -252,7 +252,7 @@
               <input class="modal__input" type="email" name="e-mail" placeholder="Для отправки ответа">
             </label>
           </p>
-          <p class="modal__wrapper">
+          <p class="modal__wrapper modal__wrapper--second">
             <label class="modal__label">
               Текст письма:
               <textarea class="modal__text" name="message" placeholder="В свободной форме"></textarea>
@@ -264,5 +264,6 @@
         </form>
       </section>
     </footer>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>
