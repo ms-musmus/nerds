@@ -1,12 +1,17 @@
 .modal {
   position: fixed;
-  bottom: 180px;
+  bottom: calc(50vh - 590px / 2);
   left: calc(50% - 960px / 2);
   z-index: 1;
-  display: none;
+  // display: none;
   width: 960px;
   height: 590px; /* временно */
+  padding-top: 70px;
+  padding-right: 100px;
+  padding-bottom: 84px;
+  padding-left: 100px;
   background-color: $background-color-white;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal__header {
@@ -19,11 +24,15 @@
 }
 
 .modal__close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
   width: 21px;
   height: 21px;
   background-color: $background-color-white;
   background-image: url("/img/close-cross.svg");
   border: none;
+  cursor: pointer;
   opacity: 0.3;
 
   &:hover {
@@ -35,13 +44,41 @@
   }
 }
 
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  &--first {
+    margin-bottom: 30px;
+  }
+
+  &--second {
+    margin-bottom: 47px;
+  }
+}
+
 .modal__label {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   font-weight: 700;
   line-height: 18px;
   color: $text-color-dark;
+
+  &--left {
+    margin-right: 40px;
+  }
 }
 
 .modal__input {
+  width: 100%;
+  padding: 14px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.5);
   border: 2px solid #d7dbdd;
@@ -63,6 +100,9 @@
 }
 
 .modal__text {
+  width: 100%;
+  min-height: 118px;
+  padding: 14px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.5);
   border: 2px solid #d7dbdd;

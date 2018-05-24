@@ -4,9 +4,18 @@
 }
 
 .information__wrapper {
+  display: flex;
+  justify-content: space-between;
   margin-right: 20px;
   margin-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 49px;
   border-bottom: 2px solid #eeeeee;
+}
+
+.information__left-wrapper {
+  width: 660px;
+  padding-top: 34px;
 }
 
 .information__title {
@@ -14,6 +23,13 @@
   font-size: 45px;
   line-height: 45px;
   color: $text-color-dark;
+}
+
+.information__description {
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 38px;
+  padding: 0;
 }
 
 .information__list-title {
@@ -24,8 +40,36 @@
 
 .information__list {
   margin: 0;
+  margin-top: 24px;
   padding: 0;
   list-style: none;
+}
+
+.information__list-item {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 36px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 1px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fb5559;
+  }
+}
+
+.information__right-wrapper {
+  width: 360px;
+  text-align: center;
+}
+
+.information__logo {
+  display: block;
+  margin-bottom: 36px;
 }
 
 .information__table-title {
@@ -34,7 +78,15 @@
   text-transform: uppercase;
 }
 
+.information__table {
+  width: 100%;
+  margin-top: 40px;
+  text-align: left;
+}
+
 .information__table-value {
+  width: 30%;
+  padding: 0;
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
@@ -47,5 +99,7 @@
 }
 
 .information__table-description {
+  padding: 0;
+  padding-top: 16px;
   line-height: 18px;
 }
