@@ -6,7 +6,7 @@
 }
 
 .range__title {
-  margin-bottom: 55px;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -24,6 +24,7 @@
   padding-right: 21px;
   padding-left: 20px;
   background-color: $background-color-light;
+  border-radius: 2px;
 }
 
 .range__scale {
@@ -70,4 +71,9 @@
   text-align: center;
   background-color: $background-color-light;
   border: 3px solid $background-color-light;
+  border-radius: 2px;
+
+  &:focus {
+    background-color: $background-color-white;
+  }
 }
