@@ -14,7 +14,6 @@ var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
 var svgstore = require("gulp-svgstore");
-var webp = require("gulp-webp");
 var uglify = require("gulp-uglify");
 
 gulp.task("style", function () {
@@ -45,12 +44,6 @@ gulp.task("serve", function () {
   gulp.watch("source/js/script.js", ["uglify"]).on("change", server.reload);
 });
 
-gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
-              .pipe(webp({quality: 90}))
-              .pipe(gulp.dest("source/img"));
-});
-
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
              .pipe(imagemin([
@@ -72,8 +65,6 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    // "source/img/**/*.{png,jpg,svg,webp}",
-    // "source/js/**/*.js"
   ], {
     base: "source"
   })
